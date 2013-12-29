@@ -139,8 +139,7 @@ cube buildOutputLayers(mat F, ivec Y, int trainend, urowvec widths, rowvec lambd
 
 	int szCounter = 1;
 	int lambdaCounter = 1;
-	
-    urowvec sumwidths = cumsum(widths);
+        urowvec sumwidths = cumsum(widths);
 	urowvec::const_iterator iterBegin = sumwidths.begin();
 	urowvec::const_iterator iterEnd = sumwidths.end();
 	rowvec::const_iterator iterBegin_ = lambdaRange.begin();
